@@ -28,6 +28,9 @@ resetButton.addEventListener('click',
             case "short":
                 minCount = 4;
                 break;
+            default:
+                minCount = 24;
+                break;
         }
         count = 59;
         time.textContent = `${minCount+1}:00`;
@@ -107,9 +110,5 @@ startButton.addEventListener('click',()=>{
     for toggle timer shd be set to 25 min
     for short break timer shd be set to 5 min
     for long break timer shd be set to 15min
-    use async await for the above functions onClickListener
-    set the changed values as inner html of the time-btn-container
-    on clicking start btn there shd classlist toggle btn hide and show
-    same for pause and reset 
 */
 
